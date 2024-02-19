@@ -1,0 +1,14 @@
+.card-class {
+     width: 18rem;
+}
+
+.card-class img {
+    object-fit: cover;
+    height: 50vh;
+}
+
+.title-card {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
