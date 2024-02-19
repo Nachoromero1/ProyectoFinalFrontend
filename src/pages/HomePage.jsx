@@ -1,7 +1,7 @@
-
 import agregarProductosLocalStorage from "../Helps/ArrayPrducts"
 import CardsC from "../components/CardsC"
 import CarouselC from "../components/CarouselC"
+import Header from "../components/Header";
 
 const HomePage = () => {
   agregarProductosLocalStorage()
