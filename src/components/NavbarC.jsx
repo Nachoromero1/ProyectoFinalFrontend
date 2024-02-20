@@ -19,7 +19,7 @@ const NavBar = () => {
           <Nav.Link href="/register">Registrarse</Nav.Link>
         </Nav>
         <Navbar.Brand href="/" className="mx-auto">
-          <img src="https://i.pinimg.com/originals/18/41/15/1841153bcf0a942c568d29d3a78e454d.png" alt="Logo" width="25px" />
+        <img className="navbar-logo" src="https://i.pinimg.com/originals/18/41/15/1841153bcf0a942c568d29d3a78e454d.png" alt="Logo" width="25px" />
         </Navbar.Brand>
         <Nav>
           <Nav.Link href="#carrito">

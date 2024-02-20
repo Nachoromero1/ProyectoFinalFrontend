@@ -8,7 +8,6 @@ import Header from "../components/Header";
 const HomePage = () => {
   agregarProductosLocalStorage()
   const arrayProductos = JSON.parse(localStorage.getItem ('products')) || [];
-  const urlImageHomePage = "https://i.ytimg.com/vi/xaHsm-8vE7w/maxresdefault.jpg"
 
   return (
     <>
