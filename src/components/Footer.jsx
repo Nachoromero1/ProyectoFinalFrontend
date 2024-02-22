@@ -1,62 +1,70 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light py-4">
+    <footer className="bg-dark text-light py-4 " style={{ marginTop: '30px' }}>
       <Container>
-        <Row>
-          <Col xs={12} md={6} className="mb-3 mb-md-0">
-            <img
-              src="https://i.pinimg.com/originals/18/41/15/1841153bcf0a942c568d29d3a78e454d.png"
-              alt="Web Logo"
-              width="30"
-              height="60"
-              className="d-inline-block align-top"
-            />{' '}
-
-          </Col>
-          <Col xs={6} md={3}>
-            <ul className="list-unstyled">
-              <li><a href="#home">Link 1</a></li>
-              <li><a href="#about">Link 2</a></li>
-              <li><a href="#services">Link 3</a></li>
-            </ul>
-          </Col>
-          <Col xs={6} md={3}>
-            <ul className="list-unstyled">
-              <li><a href="#contact">Link 4</a></li>
-              <li><a href="#terms">Link 5</a></li>
-              <li><a href="#privacy">Link 6</a></li>
-            </ul>
-          </Col>
-        </Row>
-        <Row className="mt-4">
-          <Col xs={12} md={6} className="mb-3 mb-md-0">
+        <Row className='justify-content-center'>
+        <Col xs={12} md={6} className="mb-3 mb-md-0 text-md-left" style={{ paddingLeft: 0 }}>
+  <div className='text-left col-lg-3 col-md-3 col-sm-10'>
+    <img
+      src="https://i.pinimg.com/originals/18/41/15/1841153bcf0a942c568d29d3a78e454d.png"
+      alt="Web Logo"
+      width="30"
+      height="60"
+      className="d-inline-block text-left"
+    />
+  </div>
+</Col>
+          <Col xs={6} md={3} className="text-center">
             <ul className="list-inline mb-0">
-              <li className="list-inline-item"><a href="https://facebook.com"><FaFacebook /></a></li>
-              <li className="list-inline-item"><a href="https://twitter.com"><FaTwitter /></a></li>
-              <li className="list-inline-item"><a href="https://instagram.com"><FaInstagram /></a></li>
+              <li className="list-inline-item align-items-right flex-column text-right"><a href="https://www.facebook.com/RollingCodeSchool/"><FaFacebook /></a></li>
+              <li className="list-inline-item"><a href="https://www.instagram.com/rollingcodeschool/"><FaInstagram /></a></li>
             </ul>
           </Col>
-          <img
-  src="https://i0.wp.com/1.bp.blogspot.com/-tyDj3FH73V0/UVugtbI_MYI/AAAAAAAAGYE/TzM5UBA57QQ/s1600/Data-fiscal-Web.jpg"
-  alt="Data Fiscal"
-  style={{ maxWidth: '100px', height: 'auto' }}
-  className="d-inline-block align-top"
-/>{' '}
-
-
         </Row>
-        <Row className="mt-4">
+
+        <div className='d-flex mt-2 mx-auto flex-column text-center text-md-start col-lg-3 col-md-3 col-sm-12'>
+          <a href="/Eror" style={{ textDecoration: 'none', color: 'white', fontSize: '20px' }}>Tienda oficial de ropa GymShark, Tucuman, Argentina</a>
+        </div>
+
+        <Row className="mt-2 justify-content-center">
+          <div className=' col-md-7 col-sm-12'>
+            <Col xs={6} md={3} className="text-center text-md-start">
+              <a href="https://www.linkedin.com/company/rollingcodeschool/?originalSubdomain=ar" target="_blank" rel="noopener noreferrer">
+
+                <img
+                  src="https://cdn-icons-png.flaticon.com/256/174/174857.png"
+                  alt="Descripción de la imagen"
+                  width="100"
+                  height="100"
+                  style={{ marginTop: '50px' }} /* Reducir el margen superior */
+                  className="align-items-center flex-column text-center"
+                />
+              </a>
+            </Col>
+          </div>
+
+          <Col xs={6} md={3} className="text-center text-md-end mt-2 mt-md-0">
+            <img
+              src="https://www.ocu.org/-/media/ta/images/_%20orphaned/qr-code.png?rev=2e1cc496-40d9-4e21-a7fb-9e2c76d6a288&hash=38DA21F2DF33F4BB3CE83BE5D2A723F5&mw=960"
+              alt="Data Fiscal"
+              style={{ maxWidth: '200px', height: 'auto' }}
+              className="text-left"
+              width={200}
+            />
+          </Col>
+        </Row>
+        <Row className="mt-2">
           <Col>
-            <p className="text-center">© {new Date().getFullYear()} Company Name. All Rights Reserved.</p>
+            <p className="text-center" style={{ fontSize: '15px' }}>© {new Date().getFullYear()} GymShark Todos Los Derechos Reservados</p>
           </Col>
         </Row>
       </Container>
     </footer>
-  );
-};
+  )
+}
 
 export default Footer;
