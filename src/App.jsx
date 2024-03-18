@@ -16,6 +16,7 @@ const App = () => {
           <Route path="/register" element={ <RegisterPage />}/>
           <Route path="/product/:id" element={<ProductPage />}/>
           <Route path="*" element={ <ErrorPage/>} />
+          
         </Routes>
        </BrowserRouter>
        <Footer />
