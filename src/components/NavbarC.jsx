@@ -1,9 +1,13 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
+import { FaHeart, FaShoppingCart, FaQuestionCircle } from 'react-icons/fa';
+import RegisterPage from '../pages/RegisterPage';
+import "./Navbar.css"
 
 const NavBar = () => {
+
   return (
-    <Navbar sticky="top" bg="light" expand="lg">
+    <Navbar sticky="top" className="bg-custom" expand="lg">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <div style={{ marginLeft: '20px' }}> {/* Agregar margen a la izquierda */}
@@ -12,14 +16,14 @@ const NavBar = () => {
           </Navbar.Brand>
         </div>
         <Nav className="mr-auto">
-          <Nav.Link href="/" style={{ fontSize: '18px' }}>Inicio</Nav.Link>
-          <Nav.Link href="/about" style={{ fontSize: '18px' }}>Sobre mí</Nav.Link>
-          <Nav.Link href="/contact" style={{ fontSize: '18px' }}>Contacto</Nav.Link>
+          <Nav.Link href="/" className="texto-blanco" style={{ fontSize: '18px' }}>Inicio</Nav.Link>
+          <Nav.Link href="/about" className="texto-blanco" style={{ fontSize: '18px' }}>Sobre mí</Nav.Link>
+          <Nav.Link href="/contact" className="texto-blanco" style={{ fontSize: '18px' }}>Contacto</Nav.Link>
         </Nav>
         <div style={{ marginLeft: 'auto' }}>
           <Nav>
-            <Nav.Link href="/" style={{ fontSize: '18px' }}>Iniciar sesión</Nav.Link>
-            <Nav.Link href="/register" style={{ fontSize: '18px' }}>Registrarse</Nav.Link>
+            <Nav.Link href="/" className="texto-blanco" style={{ fontSize: '18px' }}>Iniciar sesión</Nav.Link>
+            <Nav.Link href="/register" className="texto-blanco" style={{ fontSize: '18px' }}>Registrarse</Nav.Link>
           </Nav>
         </div>
       </Navbar.Collapse>
@@ -28,3 +32,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
